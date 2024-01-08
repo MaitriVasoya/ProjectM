@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>FORM</title>
+        <link rel="icon" type="image" href="IMAGES/logo.png">
+        <link href="styles1.css" rel="stylesheet">
+        
+    </head>
+    <body bgcolor="lightblue">
+        <div class="header">
+        <h1>APPLICATION FORM</h1>
+        </div>
+        <div id="greeting"></div>
+        <br><br><br><br><br><br><br>
+    <FORM name="RegisterForm" action="index.html" onsubmit="return Greeting();">
+        <center>
+            <table border="0">
+        <TR>
+            <TD width="12%"><b>First Name</b></TD>
+            <TD width="1%">&nbsp;</TD>
+            <TD><INPUT type="textbox" name="fName"></TD>
+        </TR>
+        <TR>
+            <TD>&nbsp;</TD>
+        </TR>
+        <TR>
+            <TD><b>Middle Name</b></TD>
+            <TD>&nbsp;</TD>
+            <TD><INPUT type="textbox" name="mName"></TD>
+        </TR>
+        <TR>
+            <TD>&nbsp;</TD>
+        </TR>
+        <TR>
+            <TD><b>Last Name</b></TD>
+            <TD>&nbsp;</TD>
+            <TD><INPUT type="textbox" name="lName"></TD>
+        </TR>
+        <TR>
+            <TD>&nbsp;</TD>
+        </TR>
+        <TR>
+            <TD><b>Gender</b></TD>
+            <TD>&nbsp;</TD>
+            <TD>
+                <INPUT type="radio" name="gender" value="male">MALE
+                <INPUT type="radio" name="gender" value="female">FEMALE 
+                <INPUT type="radio" name="gender" value="other">OTHER
+                <INPUT type="radio" name="gender" value="noanswer">PREFER NOT TO ANSWER
+            </TD>
+        </TR>
+        <TR>
+            <TD>&nbsp;</TD>
+        </TR>
+        <TR>
+            <TD><b>Address</b></TD>
+            <TD>&nbsp;</TD>
+            <TD>
+                <textarea name="address" cols="60" rows="5"></textarea>
+            </TD>
+        </TR>
+        <TR>
+            <TD>&nbsp;</TD>
+        </TR>
+        <TR>
+            <TD><b>City</b></TD>
+            <TD>&nbsp;</TD>
+            <TD>
+                <SELECT name="CityOfNS">
+                    <option selected>--OPTIONS--</option>
+                    <option>Halifax</option>
+                    <option>Sydney</option>
+                    <option>Dartmouth</option>
+                    <option>Truro</option>
+                    <option>New Glasgow</option>
+                    <option>Cole Harbour</option>
+                    <option>Glace Bay</option>
+                    <option>Kentville</option>
+                    <option>Amherst</option>
+                    <option>Bridgewater</option>
+                    <option>Yarmouth</option>
+                    <option>Sydney Mines</option>
+                    <option>Greenwood</option>
+                    <option>Princeville</option>
+                    <option>Antigonish</option>
+                    <option>Springhill</option>
+                    <option>Windsor</option>
+                    <option>Pictou</option>
+                    <option>Port Hawkesbury</option>
+                    <option>Wolfville</option>
+                    <option>Lunenberg</option>
+                    <option>Berwick</option>
+                    <option>Digby</option>
+                    <option>Shelburne</option>
+                    <option>Middleton</option>
+                    <option>Chester</option>
+                    <option>Parrsboro</option>
+                    <option>Oxford</option>
+                    <option>Hantsport</option>
+                </SELECT>
+            </TD>
+        </TR>
+        <TR>
+            <TD>&nbsp;</TD>
+        </TR>
+        <TR>
+            <TD>&nbsp;</TD>
+            <TD>&nbsp;</TD>
+            <TD>
+                <INPUT type="submit" name="sub" value="SUBMIT">
+                <INPUT type="reset" name="res" value="RESET" id="reset-button">
+                   
+                <button class="button button1"><a href="index.html">HOME</a></button>
+                <button onclick="notification()">A Secret Message from ME</button>
+            </TD>
+        </TR>
+        </center>
+        
+    </FORM>
+    <script src="script.js"></script>
+    </body>
+</html>
