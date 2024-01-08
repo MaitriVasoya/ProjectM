@@ -1,0 +1,80 @@
+import java.util.Scanner;
+public class Demo
+{
+    public static void main(String[] args)
+    {
+        Scanner s=new Scanner(System.in);
+        Ball bibi;
+        Field fifi;
+        Player p1=new Player("Yogmaya");
+        Player p2=new Player("Jagatmaya");
+        fifi=new Field(0,0,500,400);
+        bibi=new Ball(100,200);
+        System.out.println("Field fifi Length:"+500+"\nField fifi Width:"+400+"\n");
+        System.out.println("Player 1: Yogmaya");
+        System.out.println("Player 2: Jagatmaya\n");
+        System.out.println("Current position of the ball is ("+bibi.getX()+" , "+bibi.getY()+")\n");
+
+        p1.kick(fifi,bibi,300,45);
+        System.out.println(p1+" kicks the ball for a distance of 300 pixels and at 45 degrees");
+        System.out.println(bibi+"\n");
+        p2.kick(fifi,bibi,250,45);
+        System.out.println(p2+" kicks the ball for a distance of 250 pixels and at 0 degrees");
+        System.out.println(bibi+"\n");
+        p1.kick(fifi,bibi,700,270);
+        System.out.println(p1+" kicks the ball for a distance of 700 pixels and at 270 degrees");
+        System.out.println(bibi+"\n");
+        p2.kick(fifi,bibi,400,0);
+        System.out.println(p2+" kicks the ball for a distance of 400 pixels and at 0 degrees");
+        System.out.println(bibi+"\n");
+        p1.kick(fifi,bibi,120,60);
+        System.out.println(p1+" kicks the ball for a distance of 120 pixels and at 60 degrees");
+        System.out.println(bibi+"\n");
+        p2.kick(fifi,bibi,500,90);
+        System.out.println(p2+" kicks the ball for a distance of 500 pixels and at 90 degrees");
+        System.out.println(bibi+"\n");
+        p1.kick(fifi,bibi,350,0);
+        System.out.println(p1+" kicks the ball for a distance of 350 pixels and at 0 degrees");
+        System.out.println(bibi+"\n");
+        p2.kick(fifi,bibi,600,60);
+        System.out.println(p2+" kicks the ball for a distance of 600 pixels and at 60 degrees");
+        System.out.println(bibi+"\n");
+        p1.kick(fifi,bibi,300,270);
+        System.out.println(p1+" kicks the ball for a distance of 300 pixels and at 270 degrees");
+        System.out.println(bibi+"\n");
+        p2.kick(fifi,bibi,240,45);
+        System.out.println(p2+" kicks the ball for a distance of 240 pixels and at 45 degrees");
+        System.out.println(bibi+"\n");
+        p1.kick(fifi,bibi,1000,60);
+        System.out.println(p1+" kicks the ball for a distance of 1000 pixels and at 60 degrees");
+        System.out.println(bibi+"\n");
+        p2.kick(fifi,bibi,300,45);
+        System.out.println(p2+" kicks the ball for a distance of 300 pixels and at 45 degrees");
+        System.out.println(bibi+"\n");
+        p1.kick(fifi,bibi,600,75);
+        System.out.println(p1+" kicks the ball for a distance of 600 pixels and at 75 degrees");
+        System.out.println(bibi+"\n");
+        p2.kick(fifi,bibi,550,60);
+        System.out.println(p2+" kicks the ball for a distance of 560 pixels and at 60 degrees");
+        System.out.println(bibi+"\n");
+        p1.kick(fifi,bibi,270,270);
+        System.out.println(p1+" kicks the ball for a distance of 270 pixels and at 270 degrees");
+        System.out.println(bibi+"\n");
+        p2.kick(fifi,bibi,60,270);
+        System.out.println(p2+" kicks the ball for a distance of 60 pixels and at 270 degrees");
+        System.out.println(bibi+"\n");
+        p1.kick(fifi,bibi,500,45);
+        System.out.println(p1+" kicks the ball for a distance of 500 pixels and at 45 degrees");
+        System.out.println(bibi+"\n");
+        p2.kick(fifi,bibi,350,90);
+        System.out.println(p2+" kicks the ball for a distance of 350 pixels and at 90 degrees");
+        System.out.println(bibi+"\n");
+        p1.kick(fifi,bibi,10,0);
+        System.out.println(p1+" kicks the ball for a distance of 10 pixels and at 0 degrees");
+        System.out.println(bibi+"\n");
+        p2.kick(fifi,bibi,200,0);
+        System.out.println(p2+" kicks the ball for a distance of 200 pixels and at 0 degrees");
+        System.out.println(bibi+"\n");
+        System.out.println("THANK YOU FOR STAYING NOW YOGMAYA AND JAGATMAYA WILL TAKE A BREAK. BYEEE");
+    }
+}
